@@ -11,7 +11,7 @@ pipeline {
       }
     stage ("git Checkout") {
         steps {
-            git branch: 'main', credentialsId: 'github', url: 'https://github.com/kumarvmadhu/gitops-register-app'
+            git branch: 'main', credentialsId: 'github', url: 'https://github.com/kumarvmadhu/gitops-register-app.git'
         }
     }
     stage ("Update deployment tags") {
