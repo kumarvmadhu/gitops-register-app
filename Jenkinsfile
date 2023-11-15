@@ -4,11 +4,11 @@ pipeline {
       APP_NMAE = "register-app-pipeline"
   }
   stages {
-    stage ("Claean up workspace") {
-        steps {
-            cleanWS()
-        }
-    }
+  //  stage ("Claean up workspace") {
+   //     steps {
+    //        cleanWS()
+    //    }
+   // }
     stage ("git Checkout") {
         steps {
             git branch: 'main', credentialsId: 'github', url: 'https://github.com/kumarvmadhu/gitops-register-app'
